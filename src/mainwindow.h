@@ -2,12 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QVBoxLayout>
+#include <QLabel>
+#include <QPushButton>
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
-
-class MainWindow : public QMainWindow
+class MainWindow : public QWidget
 {
     Q_OBJECT
 
@@ -16,6 +15,8 @@ public:
     ~MainWindow();
 
 private:
-    Ui::MainWindow *ui;
+   QVBoxLayout* _vbox_layout;
+   QLabel*      _hello_label;
+   QPushButton* _print_hello_button;
 };
 #endif // MAINWINDOW_H
