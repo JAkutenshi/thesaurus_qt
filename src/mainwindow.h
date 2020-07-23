@@ -5,6 +5,7 @@
 #include <QVBoxLayout>
 #include <QLabel>
 #include <QPushButton>
+#include <QLineEdit>
 
 class MainWindow : public QWidget
 {
@@ -16,7 +17,8 @@ public:
 
 private:
    QVBoxLayout* _vbox_layout;
-   QLabel*      _hello_label;
-   QPushButton* _print_hello_button;
+   QLabel*      _show_text_label;
+   QLineEdit*   _text_field;
+   QPushButton* _print_text_button;
 };
 #endif // MAINWINDOW_H
