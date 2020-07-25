@@ -7,7 +7,11 @@
 #include <QPushButton>
 #include <QLineEdit>
 
-class MainWindow : public QWidget
+namespace Ui {
+    class MainWindow;
+}
+
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
@@ -16,9 +20,6 @@ public:
     ~MainWindow();
 
 private:
-   QVBoxLayout* _vbox_layout;
-   QLabel*      _show_text_label;
-   QLineEdit*   _text_field;
-   QPushButton* _print_text_button;
+   Ui::MainWindow* ui;
 };
 #endif // MAINWINDOW_H

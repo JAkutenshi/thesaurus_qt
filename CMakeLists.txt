@@ -16,9 +16,9 @@ find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 add_executable(thesaurus_qt
     src/main.cpp
-    src/mainwindow.cpp
-    src/mainwindow.h
-
+    src/ui/main_window.cpp
+    src/ui/main_window.h
+    src/ui/main_window.ui
 )
 
 target_link_libraries(thesaurus_qt PRIVATE Qt5::Widgets)
