@@ -13,12 +13,25 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
+set(MODEL_SRC
+    src/model/entry.h
+    src/model/entry.cpp
+    src/model/entry_repository.h
+    src/model/entry_repository.cpp
+)
 
-add_executable(thesaurus_qt
-    src/main.cpp
+set(UI_SRC
     src/ui/main_window.cpp
     src/ui/main_window.h
     src/ui/main_window.ui
+    src/ui/entry_view_model.cpp
+    src/ui/entry_view_model.h
+)
+
+add_executable(thesaurus_qt
+    src/main.cpp
+    ${MODEL_SRC}
+    ${UI_SRC}
 )
 
 target_link_libraries(thesaurus_qt PRIVATE Qt5::Widgets)

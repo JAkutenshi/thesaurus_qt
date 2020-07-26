@@ -2,10 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QVBoxLayout>
-#include <QLabel>
-#include <QPushButton>
-#include <QLineEdit>
+#include "entry_view_model.h"
 
 namespace Ui {
     class MainWindow;
@@ -20,6 +17,8 @@ public:
     ~MainWindow();
 
 private:
-   Ui::MainWindow* ui;
+
+    EntryModel*     model;
+    Ui::MainWindow* ui;
 };
 #endif // MAINWINDOW_H
