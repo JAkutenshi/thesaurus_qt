@@ -1,5 +1,5 @@
-#ifndef ENTRYMODEL_H
-#define ENTRYMODEL_H
+#ifndef ENTRY_VIEW_MODEL_H
+#define ENTRY_VIEW_MODEL_H
 
 #include <QObject>
 #include <QAbstractItemModel>
@@ -18,4 +18,4 @@ public:
     QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
 };
 
-#endif // ENTRYMODEL_H
+#endif // ENTRY_VIEW_MODEL_H

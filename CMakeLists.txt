@@ -14,10 +14,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 set(MODEL_SRC
-    src/model/entry.h
-    src/model/entry.cpp
-    src/model/entry_repository.h
-    src/model/entry_repository.cpp
+    src/model/lit_entry.h
+    src/model/lit_entry.cpp
+    src/model/lit_entries_repository.h
+    src/model/lit_entries_repository.cpp
+    src/model/article.h
+    src/model/article.cpp
+)
+
+set(DB_ACCESS_SRC
+    src/db/abstract_repository.h
 )
 
 set(UI_SRC
@@ -30,6 +36,7 @@ set(UI_SRC
 
 add_executable(thesaurus_qt
     src/main.cpp
+    ${DB_ACCESS_SRC}
     ${MODEL_SRC}
     ${UI_SRC}
 )

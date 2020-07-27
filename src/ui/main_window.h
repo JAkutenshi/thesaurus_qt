@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef MAIN_WINDOW_H
+#define MAIN_WINDOW_H
 
 #include <QMainWindow>
 #include "entry_view_model.h"
@@ -21,4 +21,4 @@ private:
     EntryModel*     model;
     Ui::MainWindow* ui;
 };
-#endif // MAINWINDOW_H
+#endif // MAIN_WINDOW_H
