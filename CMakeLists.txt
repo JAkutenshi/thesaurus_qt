@@ -24,6 +24,8 @@ set(MODEL_SRC
 
 set(DB_ACCESS_SRC
     src/db/abstract_repository.h
+    src/db/db_instance.h
+    src/db/db_instance.cpp
 )
 
 set(UI_SRC
